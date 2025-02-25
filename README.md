@@ -1,24 +1,4 @@
 # For Each - Optional Challenges
-## FibonacciChecker.java
-*    **Problem:** Write a program to check if a sequence of numbers follows the Fibonacci pattern, where each number is the sum of the two preceding ones (regradless of the starting values).
-*    **Command Line Arguments:** `<num1> <num2> <num3> ...`
-
-### Example Output
-```
-1 1 2 3 5 8
-Fibonacci!
-```
-
-```
-4 6 10 16 26
-Fibonacci!
-```
-
-```
-1 1 2 10 12
-Not Fibonacci!
-```
-
 ## RomanNumeralConverter.java - Part 1
 *    **Problem:** Convert a Roman Numeral provided by the user to its numerical value. You can assume that the Roman Numeral is valid, and that the numeral does not use subtractive rotation (ie 4 is represented as IIII, not IV).
 *    **Note:** You can either take in each Roman Numeral as a separate argument (ie `X X I I I` instead of `XXIII`), or use `String characters = args[0].toCharArray()` to convert the first argument provided by the user to an array that you can iterate through with a for-each loop.
@@ -55,3 +35,30 @@ XXIV
 MCMXCIX
 1999
 ```
+
+## FibonacciChecker.java
+*    **Problem:** Write a program to check if a sequence of numbers follows the pattern 1, 2, 3, 5, ... where each number is the sum of the two preceding ones.
+*    **Command Line Arguments:** `<num1> <num2> <num3> ...`
+*    **Hint:** You will need variables to keep track of the previous two values in the sequence. Their values could start at 0 and 1.
+
+### Example Output
+```
+1 2 3 5 8
+Fibonacci!
+```
+
+```
+1 2 3 5 8 13 21
+Fibonacci!
+```
+
+```
+1 2 3 5 8 13 40
+Not Fibonacci!
+```
+
+```
+8 10 18
+Not Fibonacci!
+```
+
